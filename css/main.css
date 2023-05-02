@@ -1,0 +1,180 @@
+/*sass*/
+/*estilos generales*/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box; }
+  
+  nav {
+    background-color: #f3d3a3; }
+  
+  .text {
+    margin: 30px;
+    padding-left: 60px; }
+  
+  footer {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color: whitesmoke;
+    background-color: rgba(26, 24, 24, 0.863);
+    height: 300px; }
+  
+  .footer a {
+    text-decoration: none;
+    color: whitesmoke; }
+  
+  .footer a:hover {
+    text-decoration: underline; }
+  
+  .footer {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+  
+  /*estilos de home*/
+  main .titulo {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    /*background-color: rgba(243,211,163,255);*/
+    background: white;
+    background: linear-gradient(90deg, white 22%, #f3d3a3 58%); }
+    main .titulo .titulo-dos {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center; }
+  
+  main #black {
+    background: white;
+    background: linear-gradient(90deg, white 22%, #f3d3a3 58%);
+    padding: 30px;
+    text-align: center; }
+  
+  main .zigzag {
+    background-color: black;
+    color: whitesmoke; }
+    main .zigzag .info {
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      main .zigzag .info p {
+        padding: 30px;
+        font-size: 20px; }
+      main .zigzag .info #clientes {
+        display: none; }
+  
+  /*estilos de productos*/
+  .text {
+    margin: 30px;
+    padding-left: 60px; }
+  
+  /*estilos de sedes*/
+  .cartas {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: #e4c1a3; }
+    .cartas .caja {
+      display: flex;
+      flex-direction: column;
+      padding: 20px;
+      border-left: solid black 0.5px;
+      border-right: solid black 0.5px;
+      width: 250px;
+      height: 360px;
+      justify-content: center;
+      align-items: center;
+      align-content: center; }
+  
+  /*estilos de sobre nosotros*/
+  .nosotros {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 400px; }
+  
+  .brown {
+    background: #f3d3a3;
+    background: linear-gradient(0deg, #f3d3a3 16%, white 96%);
+    height: 150px;
+    padding: 30px;
+    text-align: center; }
+  
+  .nosotros-fotos {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    background-color: #f3d3a3;
+    padding: 20px; }
+    .nosotros-fotos p {
+      padding: 30px; }
+  
+  .mobile #gon {
+    display: none; }
+  
+  .mobile #joa {
+    display: none; }
+  
+  /*estilos de contacto*/
+  #contacto {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    background: white;
+    background: radial-gradient(circle, white 23%, #f3d3a3 61%);
+    padding-right: 150px; }
+    #contacto #formulario {
+      padding: 150px; }
+  
+  /*media queries*/
+  @media screen and (max-width: 600px) {
+    /*home*/
+    .titulo div img {
+      display: none; }
+    .titulo {
+      height: 250px;
+      justify-content: center;
+      text-align: center; }
+    #clientes {
+      display: block; }
+    #clientes-celu {
+      display: none; }
+    .info {
+      flex-direction: column; }
+    /*sobre nosotros*/
+    .nosotros {
+      flex-direction: column; }
+    .uno {
+      display: none; }
+    .mobile {
+      display: flex;
+      justify-content: center;
+      padding: 20px;
+      background-color: #f3d3a3; }
+    .mobile img {
+      padding: 30px; }
+    #joa {
+      display: block; }
+    #gon {
+      display: block; }
+    /*contacto*/
+    #img-form {
+      display: none; }
+    #contacto {
+      justify-content: center;
+      align-items: center;
+      align-content: center;
+      flex-direction: column; }
+    /*sedes*/
+    .cartas {
+      flex-direction: column; }
+    .cajas {
+      padding-bottom: 60px;
+      padding-top: 60px; } }
